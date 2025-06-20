@@ -1,0 +1,19 @@
+//unordered list for guessed letters
+const guessedLetters = document.querySelector(".guessed-letters");
+//Guess button
+const guess = document.querySelector(".guess");
+//text input for guessing letter
+const pickLetter = document.querySelector(".letter");
+//paragraph to show word in progress
+const progress = document.querySelector(".word-in-progress");
+//paragraph to show remaining guesses
+const remaining = document.querySelector(".remaining");
+//span for remaining guesses
+const numRemaining = document.querySelector("span");
+//paragraph for messages to player
+const message = document.querySelector(".message");
+//play again button
+const playAgain = document.querySelector(".play-again");
+
+const word = "magnolia";
+
