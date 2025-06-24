@@ -17,3 +17,21 @@ const playAgain = document.querySelector(".play-again");
 
 const word = "magnolia";
 
+//display placeholders
+const placeholders = function (word) {
+  const letterPlaceholder = [];
+  for (const letter of word) {
+    console.log(letter);
+    letterPlaceholder.push("●");
+  }
+  progress.innerText = letterPlaceholder.join("");
+};
+
+placeholders(word);
+
+guess.addEventListener("click", function(e) {
+    e.preventDefault();
+    const choose = pickLetter;
+    console.log(choose);
+    choose.value = "";
+});
